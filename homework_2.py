@@ -19,7 +19,6 @@ class Classmate(Person):
         self.group = group
 
     def introduce(self):
-        # Свой текст, без super().introduce()
         print(f"Привет, меня зовут {self.name}, я одноклассник Байэля, "
               f"я родился {self.birth_date}, работаю {self.occupation}, "
               f"учусь в группе: {self.group}")
@@ -31,7 +30,6 @@ class Friend(Person):
         self.hobby = hobby
 
     def introduce(self):
-        # Свой текст, без super().introduce()
         print(f"Привет, меня зовут {self.name}, я друг Байэля, "
               f"я родился {self.birth_date}, работаю {self.occupation}, "
               f"мое хобби: {self.hobby}")
@@ -55,6 +53,7 @@ friend2 = Friend("Данияр", "20.03.1999", "дизайнером", True, "ф
 
 friend1.introduce()
 friend2.introduce()
+
 
 
 
