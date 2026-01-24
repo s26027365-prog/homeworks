@@ -19,7 +19,6 @@ def create_tables(connection):
 
 
 def insert_books(connection):
-    """Добавляет книги, используя переданное соединение"""
     cursor = connection.cursor()
 
     books_data = [
@@ -59,4 +58,5 @@ if __name__ == "__main__":
         insert_books(connection)
     finally:
         connection.close()
+
         print("Соединение с базой данных закрыто.")
